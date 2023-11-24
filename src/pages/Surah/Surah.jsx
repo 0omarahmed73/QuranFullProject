@@ -67,13 +67,14 @@ const Surah = () => {
   };
   const getTafseer = async (ayahNum) => { 
     const ayat = await fetch(
-      `http://api.quran-tafseer.com/tafseer/1/${surahNumber}/${ayahNum}`,
+      `https://quranenc.com/api/v1/translation/aya/arabic_moyassar/${surahNumber}/${ayahNum}`,
       {
         method: "GET",
       }
     );
     const result = await ayat.json();
-    setTafseer(result.text)
+    console.log(result)
+    setTafseer(result.result.translation)
   };
   console.log(show);
   return (
