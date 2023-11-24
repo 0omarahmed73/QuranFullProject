@@ -1,0 +1,35 @@
+.NavBar {
+max-height: 90px;
+position: sticky;
+top: 0;
+z-index: 1000;
+
+padding: 10px;
+background-color: #212529;
+width: 100%;
+  .img {
+    width: 70px;
+    height: 70px;
+    & img {
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      border-radius: 50%;
+      padding: 7.5px;
+      object-fit: cover;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+.menu {
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}

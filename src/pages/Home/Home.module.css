@@ -1,0 +1,46 @@
+.Home {
+    .inner2 {
+      display: flex;
+      padding-top: 20px;
+      align-items: center;
+      width: 100%;
+      flex-direction: column;
+      overflow: scroll;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+
+
+.upper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+  gap: 10px;
+  flex-direction: row-reverse;
+  & p {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .img {
+    width: 200px;
+    height: 200px;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+}
+
+.lower {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
