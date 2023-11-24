@@ -20,7 +20,7 @@ const DefaultLayout = () => {
         </Container>
       </div>
       <footer className={style.footer}>
-        <p className="m-0 pb-2 text-center fw-bold">Omar Ahmed © {(new Date()).getFullYear()} Quran App</p>
+        <p className="m-0 pb-2 text-center fw-bold">صدقة جارية لجدتي كوثر وجميع اموات المسلمين  © {(new Date()).getFullYear()} Quran App</p>
       </footer>
     </div>
   );
